@@ -1,0 +1,29 @@
+//Recuperation de tous les vins
+http://localhost:8080/tpjee/resources/vin
+###
+
+//Création d'un vin
+POST http://localhost:8080/tpjee/resources/vin
+Content-Type: application/json
+
+{
+  "nomVin": "bourgogne",
+  "millesime": "2015"
+}
+
+
+###
+
+//Suppression d'un vin
+DELETE http://localhost:8080/tpjee/resources/vin/medoc
+
+###
+
+//Mise à jour d'un vin
+PUT http://localhost:8080/tpjee/resources/vin
+Content-Type: application/json
+
+{
+  "nomVin": "bourgogne",
+  "millesime": "2013"
+}
